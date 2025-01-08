@@ -1,0 +1,59 @@
+{
+  "name": "Project_Git_1042_1",
+  "description": "",
+  "spectralExtends": [],
+  "extends": [],
+  "formats": [
+    "oas2",
+    "oas3",
+    "oas3.0",
+    "oas3.1"
+  ],
+  "aliases": {
+    "Target1": {
+      "id": "OqXkczQCmJmINRbYD9gHf",
+      "description": "Target1",
+      "name": "Target1",
+      "targets": [
+        {
+          "formats": [
+            "oas2"
+          ],
+          "given": "@indo.new"
+        }
+      ]
+    }
+  },
+  "rules": {
+    "Rule1": {
+      "id": "mm4eDGWbxUq5IEU8dNw36",
+      "given": [
+        "#API_Document"
+      ],
+      "severity": "error",
+      "then": {
+        "function": "alphabetical"
+      },
+      "name": "Rule1",
+      "description": "Rule1",
+      "message": "Rule1"
+    }
+  },
+  "x-embeddedFunctions": [
+    {
+      "id": "Lq38PbRHo8s4gcPtn-BJ2",
+      "extendedFrom": "",
+      "name": "New-Function1",
+      "content": "import { createRulesetFunction } from '@stoplight/spectral-core';\n\nexport default createRulesetFunction(\n  {\n    input: null,\n    options: {\n      type: \"object\",\n      additionalProperties: false,\n\n      properties: {\n        exceptions: {\n          type: \"array\",\n\n          items: {\n            type: \"string\"\n          }\n        }\n      }\n    },\n  },\n  // https://github.com/stoplightio/spectral/blob/develop/docs/guides/5-custom-functions.md#writing-functions\n  function New_Function1(input, options, context) {},\n);"
+    }
+  ],
+  "extendedDefault": false,
+  "overrides": [
+    {
+      "files": [
+        "aasssss"
+      ],
+      "rules": {}
+    }
+  ]
+}
